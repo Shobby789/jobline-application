@@ -1,0 +1,22 @@
+.company-card {
+  width: 18rem;
+  /* height: 10rem; */
+  background-color: white;
+}
+
+.reviews-text {
+  position: relative;
+  bottom: -3px;
+  font-size: 0.8rem;
+}
+
+.company-links {
+  font-size: 0.9rem;
+
+  text-decoration: none;
+}
+
+.company-links:hover {
+  text-decoration: underline;
+  transition: 0.2s;
+}

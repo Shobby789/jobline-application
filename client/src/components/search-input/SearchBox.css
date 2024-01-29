@@ -1,0 +1,22 @@
+.search-box .input-group {
+  width: 65%;
+  border: 2px solid var(--purple-color);
+  padding: 5px;
+  border-radius: 30px;
+  gap: 5px;
+}
+
+.search-box .input-group > :first-child {
+  background-color: var(--purple-color);
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .search-box .input-group {
+    width: 100%;
+  }
+
+  .search-box .input-group .input-group-text {
+    font-size: 0.7rem;
+  }
+}

@@ -1,0 +1,13 @@
+.footer-wrapper {
+  background-color: black;
+}
+
+.footer-wrapper .container p {
+  color: var(--text-secondary);
+}
+
+.footer-wrapper > :nth-child(2) a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}

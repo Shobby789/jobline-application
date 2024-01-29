@@ -1,0 +1,29 @@
+.job-card {
+  box-shadow: 0 0 12px rgb(238, 234, 234);
+}
+
+.job-card > :first-child p {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.heart-icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.job-card > :nth-child(2) p {
+  color: rgb(140, 137, 137);
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.job-location,
+.job-department {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.job-card-btn {
+  font-size: 0.8rem !important;
+}

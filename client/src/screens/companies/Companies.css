@@ -1,0 +1,9 @@
+.companies-wrapper > :first-child {
+  height: 40vh;
+}
+
+.companies-wrapper > :first-child p {
+  color: var(--text-secondary);
+  font-size: 1.2em;
+  font-weight: 400;
+}
