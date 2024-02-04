@@ -101,7 +101,7 @@ const Login = () => {
         )}
       </div>
       <div className="container min-vh-100 d-flex flex-column align-items-center justify-content-center gap-2 text-light right-box px-5 text-center">
-        <h1 className="fw-bold">Welcome to Jobline!</h1>
+        <h1 className="fw-bold">Welcome back to Jobline!</h1>
         <p className="fs-5 fw-light">
           Find your dream jobs while sitting in your comfort zone
         </p>
