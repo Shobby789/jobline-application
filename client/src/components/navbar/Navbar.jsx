@@ -57,11 +57,11 @@ const Navbar = () => {
                   Companies
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link mx-lg-2" to="/hire">
                   Hire
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className="nav-link mx-lg-2" to="/contact">
                   Contact
@@ -93,9 +93,14 @@ const Navbar = () => {
             </ul>
           </li>
         ) : (
-          <Link to="/signin" className="login-button">
-            Sign in
-          </Link>
+          <div className="d-flex align-items-center justify-content-center gap-2">
+            <Link to="/signin" className="login-button">
+              Sign in
+            </Link>
+            <Link className="login-button" to="/hire">
+              Hire
+            </Link>
+          </div>
         )}
         {/* <Link to="./login.html" className="login-button">
           Sign in
