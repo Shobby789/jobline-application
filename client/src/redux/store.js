@@ -1,5 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 import authReducer from "./reducer/authSlice";
+import jobReducer from "./reducer/jobSlice";
 
 const customMiddleware = (store) => (next) => (action) => {
   // Your custom middleware logic here
@@ -9,6 +10,7 @@ const customMiddleware = (store) => (next) => (action) => {
 const store = configureStore({
   reducer: {
     auth: authReducer,
+    jobs: jobReducer,
   },
   middleware: (getDefaultMiddleware) => {
     return [

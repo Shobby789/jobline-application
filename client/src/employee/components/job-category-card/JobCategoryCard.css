@@ -10,6 +10,10 @@
   gap: 5px;
 }
 
+.job-category-card div h6 {
+  cursor: pointer;
+}
+
 .job-category-card > :nth-child(2) p {
   font-size: 0.8rem;
   font-weight: 500;

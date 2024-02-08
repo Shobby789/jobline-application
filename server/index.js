@@ -9,6 +9,7 @@ app.use(cors());
 ConnectDB();
 
 app.use("/auth/api", require("./routes/authRoutes"));
+app.use("/api", require("./routes/jobRoutes"));
 
 app.listen(1000, () => {
   console.log("Server running on port 1000");

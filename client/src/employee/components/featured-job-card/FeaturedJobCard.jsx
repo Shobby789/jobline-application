@@ -1,6 +1,6 @@
 import React from "react";
 import "./FeaturedJobCard.css";
-import logo from "../../assets/web-dev.png";
+import logo from "../../../assets/web-dev.png";
 import { IoLocationOutline } from "react-icons/io5";
 import { FaLongArrowAltRight } from "react-icons/fa";
 

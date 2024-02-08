@@ -32,18 +32,22 @@ const ReviewsSlider = ({ reviews }) => {
   };
   const reviewsData = [
     {
+      id: 1,
       text: "Now you have a basic reviews slider in your React app using React Slick. Customize the styles, slider settings, and reviews data according to your requirements.",
       author: "John Doe",
     },
     {
+      id: 2,
       text: "Now you have a basic reviews slider in your React app using React Slick. Customize the styles, slider settings, and reviews data according to your requirements.",
       author: "Jane Smith",
     },
     {
+      id: 3,
       text: "Now you have a basic reviews slider in your React app using React Slick. Customize the styles, slider settings, and reviews data according to your requirements.",
       author: "John Doe",
     },
     {
+      id: 4,
       text: "Now you have a basic reviews slider in your React app using React Slick. Customize the styles, slider settings, and reviews data according to your requirements.",
       author: "Jane Smith",
     },
@@ -55,7 +59,7 @@ const ReviewsSlider = ({ reviews }) => {
         <Slider {...settings}>
           {reviewsData.map((r) => {
             return (
-              <div className="review-slide" key={r.index}>
+              <div className="review-slide" key={r.id}>
                 <p className="mb-5">{r.text}</p>
                 <h5 className="fw-semibold mb-3">{r.author}</h5>
                 <p className="fw-semibold fs-6">Microsoft</p>

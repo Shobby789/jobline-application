@@ -39,19 +39,19 @@
   outline: none;
 }
 
-.nav-link {
+.employee-nav-link {
   color: #666777;
   font-weight: 500;
   position: relative;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.employee-nav-link:hover,
+.employee-nav-link.active {
   color: #000;
 }
 
 @media screen and (min-width: 991px) {
-  .nav-link::before {
+  .employee-nav-link::before {
     content: "";
     position: absolute;
     bottom: 0;
@@ -64,8 +64,8 @@
     transition: 0.3s ease-in-out;
   }
 
-  .nav-link:hover::before,
-  .nav-link.active::before {
+  .employee-nav-link:hover::before,
+  .employee-nav-link.active::before {
     width: 100%;
     visibility: visible;
   }

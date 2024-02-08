@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
-import joblineLogo from "../../assets/jobline-logo.png";
+import joblineLogo from "../../../assets/jobline-logo.png";
 import { useSelector } from "react-redux";
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
         </Link>
         <div
           className="offcanvas offcanvas-end"
-          tabindex="-1"
+          tabIndex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
@@ -40,7 +40,7 @@ const Navbar = () => {
             <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
               <li className="nav-item">
                 <Link
-                  className="nav-link mx-lg-2 active"
+                  className="nav-link employee-nav-link mx-lg-2 active"
                   aria-current="page"
                   to="/"
                 >
@@ -48,12 +48,18 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link mx-lg-2" to="/find-jobs">
+                <Link
+                  className="nav-link employee-nav-link mx-lg-2"
+                  to="/find-jobs"
+                >
                   Find jobs
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link mx-lg-2" to="/companies">
+                <Link
+                  className="nav-link employee-nav-link mx-lg-2"
+                  to="/companies"
+                >
                   Companies
                 </Link>
               </li>
@@ -63,7 +69,10 @@ const Navbar = () => {
                 </Link>
               </li> */}
               <li className="nav-item">
-                <Link className="nav-link mx-lg-2" to="/contact">
+                <Link
+                  className="nav-link employee-nav-link mx-lg-2"
+                  to="/contact"
+                >
                   Contact
                 </Link>
               </li>
@@ -73,7 +82,7 @@ const Navbar = () => {
         {isLoggedIn ? (
           <li className="nav-item dropdown">
             <Link
-              className="nav-link dropdown-toggle"
+              className="nav-link employee-nav-link dropdown-toggle"
               to="/profile"
               role="button"
               data-bs-toggle="dropdown"

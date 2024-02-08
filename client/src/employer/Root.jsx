@@ -1,7 +1,6 @@
 import React from "react";
-import Navbar from "./employee/components/navbar/Navbar";
-import Footer from "./employee/containers/footer/Footer";
 import { Outlet, useLocation } from "react-router-dom";
+import Index from "./pages/home/Index";
 
 const Root = () => {
   const location = useLocation();
@@ -11,7 +10,7 @@ const Root = () => {
     <>
       {shouldComponentRender && <Navbar />}
       <Outlet />
-      {shouldComponentRender && <Footer />}
+      {shouldComponentRender && <Index />}
     </>
   );
 };

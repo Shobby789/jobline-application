@@ -7,22 +7,24 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import Home from "./screens/home/Home.jsx";
-import Jobs from "./screens/jobs/Jobs.jsx";
+import Home from "./employee/screens/home/Home.jsx";
+import Jobs from "./employee/screens/jobs/Jobs.jsx";
 import Root from "./Root.jsx";
-import Companies from "./screens/companies/Companies.jsx";
-import Hire from "./screens/hire/Hire.jsx";
-import Contact from "./screens/contact/Contact.jsx";
+import Companies from "./employee/screens/companies/Companies.jsx";
+import Hire from "./employee/screens/hire/Hire.jsx";
+import Contact from "./employee/screens/contact/Contact.jsx";
 import { Provider } from "react-redux";
 import store from "./redux/store.js";
-import Login from "./screens/auth/Login.jsx";
-import SignUp from "./screens/auth/SignUp.jsx";
+import Login from "./auth/Login.jsx";
+import SignUp from "./auth/SignUp.jsx";
+import JobDescription from "./employee/screens/jobdescription/JobDescription.jsx";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Root />}>
       <Route index element={<Home />} />
       <Route path="/find-jobs" element={<Jobs />} />
+      <Route path="/job/:_id" element={<JobDescription />} />
       <Route path="/companies" element={<Companies />} />
       <Route path="/hire" element={<Hire />} />
       <Route path="/contact" element={<Contact />} />
