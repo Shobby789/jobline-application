@@ -1,5 +1,6 @@
 .job-card {
   box-shadow: 0 0 12px rgb(238, 234, 234);
+  width: 40rem;
 }
 
 .job-card > :first-child p {

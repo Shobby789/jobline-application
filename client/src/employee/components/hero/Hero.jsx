@@ -9,8 +9,8 @@ const Hero = () => {
     <section className="hero-section pt-5">
       <div className="container d-flex align-items-center justify-content-center flex-column fs-1 text-center">
         <h1 className="mb-3">
-          Find your dream jobs while <br />
-          sitting at home
+          Empowering Your Job Search Journey <br />
+          Find Your Dream Job Today
         </h1>
         <p>
           When you are searching for a job, there are a few things you can do

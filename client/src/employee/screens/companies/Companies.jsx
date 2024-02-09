@@ -10,7 +10,7 @@ const Companies = () => {
         <p className="">Get access to millions of company reviews</p>
       </div>
       {/* companies grid */}
-      <div className="container-fluid bg-light pt-3">
+      <div className="container-fluid bg-light pt-5">
         <div className="container py-5 d-flex justify-content-between flex-wrap align-items-center">
           <CompanyCard />
           <CompanyCard />

@@ -22,32 +22,25 @@ const Jobs = () => {
     <>
       <Header text={"Find Your Dream Jobs"} showSearchBox={true} height={80} />
       <section className="container-fluid bg-light py-5">
-        <div className="container py-5">
-          <div className="row">
-            <div className="col-lg-5 jobs-container">
-              <div className="card pt-4 pb-3 px-4 border-0 mb-4">
-                <h5 className="fw-semibold">Job Categories</h5>
-              </div>
-              {job_categories.map((c) => {
-                return <JobCategoryCard jobcategory={c} key={c.index} />;
-              })}
-            </div>
-            <div className="col-lg-7 job-description-container">
-              {data &&
-                data.map((job) => {
-                  return (
-                    <JobCard
-                      _id={job._id}
-                      key={job._id}
-                      title={job.jobtitle}
-                      jobtype={job.jobtype}
-                      salary={job.salary}
-                      location={job.joblocation}
-                    />
-                  );
-                })}
-            </div>
-          </div>
+        <div className="container d-flex flex-wrap justify-content-between align-items-center py-5">
+          {job_categories.map((c) => {
+            return <JobCategoryCard jobcategory={c} key={c} />;
+          })}
+        </div>
+        <div className="container py-5 d-flex flex-wrap justify-content-between align-items-center job-description-container">
+          {data &&
+            data.map((job) => {
+              return (
+                <JobCard
+                  _id={job._id}
+                  key={job._id}
+                  title={job.jobtitle}
+                  jobtype={job.jobtype}
+                  salary={job.salary}
+                  location={job.joblocation}
+                />
+              );
+            })}
         </div>
       </section>
     </>

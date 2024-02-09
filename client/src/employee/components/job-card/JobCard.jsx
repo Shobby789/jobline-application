@@ -25,13 +25,13 @@ const JobCard = ({
       <div className="d-flex justify-content-start gap-3 pt-2 pb-0 mb-3">
         <p>Type: {jobtype}</p>
         <p>Posted: 2 days ago</p>
-        <div onClick={handleSave} className="ms-auto">
+        {/* <div onClick={handleSave} className="ms-auto">
           {save === true ? (
             <FaHeart className="heart-icon" />
           ) : (
             <IoIosHeartEmpty className="heart-icon" />
           )}
-        </div>
+        </div> */}
       </div>
       <div>
         <h5 className="fw-semibold">{title}</h5>
@@ -55,9 +55,9 @@ const JobCard = ({
         <div>
           <button
             className="secondary-button border-0 job-card-btn"
-            onClick={() => navigate(`/job/${_id}`)}
+            onClick={() => navigate(`/job-details/${_id}`)}
           >
-            Apply Now
+            Job Details
           </button>
         </div>
       </div>

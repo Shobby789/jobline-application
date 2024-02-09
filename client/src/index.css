@@ -52,6 +52,10 @@
 }
 
 .secondary-heading {
-  color: rgb(140, 137, 137);
-  font-weight: 500;
+  color: rgb(107, 104, 104);
+  /* font-weight: 500; */
+}
+
+.secondaryBorder {
+  border: 1px solid silver;
 }

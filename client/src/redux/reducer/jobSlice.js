@@ -7,10 +7,19 @@ export const getJobs = createAsyncThunk("api/get-all-jobs", async () => {
   return result.data.data;
 });
 
+export const getJobDetails = createAsyncThunk(
+  "api/get-job-details",
+  async (_id) => {
+    const result = await apijson.get(`api/get-job-details/${_id}`);
+    return result.data;
+  }
+);
+
 const initialState = {
   jobs: [],
   loading: false,
   error: null,
+  jobdetails: null,
 };
 
 export const jobSlice = createSlice({
@@ -26,6 +35,19 @@ export const jobSlice = createSlice({
       state.jobs = action.payload;
     });
     addCase(getJobs.rejected, (state, action) => {
+      state.loading = false;
+      state.error = action.error.message;
+    });
+
+    // getJobDetals
+    addCase(getJobDetails.pending, (state, action) => {
+      state.loading = true;
+    });
+    addCase(getJobDetails.fulfilled, (state, action) => {
+      state.loading = false;
+      state.jobdetails = action.payload;
+    });
+    addCase(getJobDetails.rejected, (state, action) => {
       state.loading = false;
       state.error = action.error.message;
     });

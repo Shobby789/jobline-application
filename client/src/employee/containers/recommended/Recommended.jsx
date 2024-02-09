@@ -22,22 +22,53 @@ const Recommended = () => {
   return (
     <section className="recommended-wrapper container-fluid py-5">
       <div className="container py-3">
-        <div className="container d-flex justify-content-between align-items-center">
+        <div className="container px-0 d-flex justify-content-between align-items-center">
           <h3 className="fw-semibold">Recommended Jobs</h3>
-          <div>
+          <div className="">
             <button className="theme-button border-0">Latest Job</button>
             <button className="secondary-button border-0 ms-2">
               Premium Jobs
             </button>
           </div>
         </div>
-        <div className="container">
+        <div className="container px-0">
           <p className="fs-6">Explore suggested job searches</p>
         </div>
       </div>
-      <div className="container py-3">
+      <div className="container d-flex flex-wrap justify-content-between align-items-center py-5">
+        {job_categories.map((c) => {
+          return <JobCategoryCard jobcategory={c} key={c} />;
+        })}
+      </div>
+      <div className="container pb-4 d-flex flex-wrap justify-content-between align-items-center">
+        {data &&
+          data.map(
+            ({
+              _id,
+              author,
+              description,
+              jobcategory,
+              joblocation,
+              jobtitle,
+              jobtype,
+              salary,
+            }) => {
+              return (
+                <JobCard
+                  key={_id}
+                  _id={_id}
+                  title={jobtitle}
+                  jobtype={jobtype}
+                  salary={salary}
+                  location={joblocation}
+                />
+              );
+            }
+          )}
+      </div>
+      {/* <div className="container py-3">
         <div className="container px-0">
-          <div className="row">
+          <div className="container p-0">
             <div className="col-lg-5 col-md-5 col-sm-12">
               <div className="card pt-4 pb-3 px-4 border-0 mb-4">
                 <h5 className="fw-semibold">Job Categories</h5>
@@ -47,35 +78,9 @@ const Recommended = () => {
                   return <JobCategoryCard jobcategory={c} key={c.index} />;
                 })}
             </div>
-            <div className="col-lg-7 col-md-6 col-sm-12">
-              {data &&
-                data.map(
-                  ({
-                    _id,
-                    author,
-                    description,
-                    jobcategory,
-                    joblocation,
-                    jobtitle,
-                    jobtype,
-                    salary,
-                  }) => {
-                    return (
-                      <JobCard
-                        key={_id}
-                        _id={_id}
-                        title={jobtitle}
-                        jobtype={jobtype}
-                        salary={salary}
-                        location={joblocation}
-                      />
-                    );
-                  }
-                )}
-            </div>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };

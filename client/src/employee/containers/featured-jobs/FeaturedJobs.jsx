@@ -4,8 +4,8 @@ import FeaturedJobCard from "../../components/featured-job-card/FeaturedJobCard"
 
 const FeaturedJobs = () => {
   return (
-    <section className="container py-5">
-      <div className="container py-3">
+    <section className="container-fluid py-5">
+      <div className="container px-0 py-3">
         <div className="container d-flex justify-content-between align-items-center">
           <h3 className="fw-semibold">Featured Job Offers</h3>
           <div>
@@ -18,7 +18,9 @@ const FeaturedJobs = () => {
           </p>
         </div>
       </div>
-      <div className="container d-flex justify-content-between align-items-center flex-wrap py-3">
+      <div className="container px-0 d-flex justify-content-between align-items-center flex-wrap py-3">
+        <FeaturedJobCard />
+        <FeaturedJobCard />
         <FeaturedJobCard />
         <FeaturedJobCard />
         <FeaturedJobCard />
