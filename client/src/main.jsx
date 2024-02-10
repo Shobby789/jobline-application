@@ -18,6 +18,7 @@ import store from "./redux/store.js";
 import Login from "./auth/Login.jsx";
 import SignUp from "./auth/SignUp.jsx";
 import JobDescription from "./employee/screens/jobdescription/JobDescription.jsx";
+import ApplyForJob from "./employee/screens/jobdescription/ApplyForJob.jsx";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
@@ -25,6 +26,10 @@ export const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path="/find-jobs" element={<Jobs />} />
       <Route path="/job-details/:_id" element={<JobDescription />} />
+      <Route
+        path="/job-details/:_id/application-form"
+        element={<ApplyForJob />}
+      />
       <Route path="/companies" element={<Companies />} />
       <Route path="/hire" element={<Hire />} />
       <Route path="/contact" element={<Contact />} />

@@ -54,6 +54,7 @@
 .secondary-heading {
   color: rgb(107, 104, 104);
   /* font-weight: 500; */
+  font-size: 0.9rem;
 }
 
 .secondaryBorder {

@@ -49,7 +49,7 @@ const JobCard = ({
             <span className="me-2">
               <IoLocationOutline />
             </span>
-            <span className="job-department">IT</span>
+            <span className="job-department">Information Technology</span>
           </p>
         </div>
         <div>

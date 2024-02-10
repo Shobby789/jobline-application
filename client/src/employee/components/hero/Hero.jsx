@@ -27,9 +27,7 @@ const Hero = () => {
             aria-label="Amount (to the nearest dollar)"
             placeholder="Job title or keyword"
           />
-          <button className="input-group-text rounded-5 px-3">
-            <IoLocationOutline className="me-1" /> Any location
-          </button>
+          <button className="input-group-text rounded-5 px-3">Search</button>
         </div>
       </div>
     </section>

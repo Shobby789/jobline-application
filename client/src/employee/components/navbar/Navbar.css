@@ -4,6 +4,7 @@
   /* margin: 20px; */
   /* border-radius: 16px; */
   padding: 0.5rem;
+  box-shadow: 0 0px 14px 3px whitesmoke;
 }
 
 .navbar-brand,

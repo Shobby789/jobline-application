@@ -60,7 +60,7 @@ module.exports.getAllJobs = async (req, res) => {
 module.exports.getJobDetails = async (req, res) => {
   try {
     const { _id } = req.params;
-    console.log(req.params);
+    // console.log(req.params);
     const job = await JobModel.findOne({ _id });
     if (job) {
       return res.status(201).send({ data: job });
@@ -75,8 +75,16 @@ module.exports.getJobDetails = async (req, res) => {
 // apply for job
 module.exports.applyForJob = async (req, res) => {
   try {
+    const { education, experience, company, coverLetter } = req.body;
+    const { filename } = req.file;
+    console.log("data >> ", req.body);
+    console.log("filename >> ", filename);
   } catch (error) {
     console.log("applyForJob error >> ", error);
     return res.status(400).send({ data: "Something went wrong" });
   }
 };
+// education: "",
+// experience: "",
+// company: "",
+// coverLetter: "",

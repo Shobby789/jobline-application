@@ -16,8 +16,20 @@ const Recommended = () => {
     dispatch(getJobs());
   }, []);
 
-  if (loading) return <div>Loading...</div>;
-  if (error) return <div>Error: {error}</div>;
+  if (loading)
+    return (
+      <div className="container-fluid py-5 d-flex justify-content-center align-items-center">
+        <div className="spinner-border m-5" role="status">
+          <span className="visually-hidden">Loading...</span>
+        </div>
+      </div>
+    );
+  if (error)
+    return (
+      <div className="container-fluid py-5 d-flex justify-content-center align-items-center">
+        <h5>Error: {error}</h5>
+      </div>
+    );
 
   return (
     <section className="recommended-wrapper container-fluid py-5">

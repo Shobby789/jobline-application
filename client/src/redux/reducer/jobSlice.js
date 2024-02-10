@@ -15,6 +15,14 @@ export const getJobDetails = createAsyncThunk(
   }
 );
 
+export const applyOnJob = createAsyncThunk(
+  "api//application-form",
+  async (data) => {
+    const result = await apijson.post("/api/application-form", data);
+    return result.data;
+  }
+);
+
 const initialState = {
   jobs: [],
   loading: false,
