@@ -3,8 +3,10 @@ import { PiInstagramLogoFill } from "react-icons/pi";
 import { CiLocationOn } from "react-icons/ci";
 import { CiClock2 } from "react-icons/ci";
 import { LiaMoneyBillWaveAltSolid } from "react-icons/lia";
+import { Link } from "react-router-dom";
 
 const JobCard = () => {
+  const id = "1234";
   return (
     <div className="card job-card text-center mb-4 mx-auto p-4 rounded-4 border shadow_hover">
       <div className="row">
@@ -12,8 +14,13 @@ const JobCard = () => {
           <PiInstagramLogoFill />
         </div>
         <div className="col-10 text-start">
-          <h6 className="card-title fw-bold">UX Designer</h6>
-          <div className="d-flex gap-3 mb-2">
+          <Link
+            to={`/jobs/job-details`}
+            className="fs-6 text-decoration-none card-title fw-bold"
+          >
+            UX Designer
+          </Link>
+          <div className="d-flex gap-3 mb-2 mt-2">
             <div className="d-flex gap-1 ps-0">
               <CiLocationOn
                 className="fs-6"

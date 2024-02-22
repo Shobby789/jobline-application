@@ -15,12 +15,14 @@ import Companies from "./pages/Companies.jsx";
 import Contact from "./pages/Contact.jsx";
 import SignUp from "./pages/SignUp.jsx";
 import Login from "./pages/Login.jsx";
+import JobDetails from "./pages/JobDetails.jsx";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
       <Route path="/all-jobs" element={<AllJobs />} />
+      <Route path="/jobs/job-details" element={<JobDetails />} />
       <Route path="/companies" element={<Companies />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/sign-up" element={<SignUp />} />
