@@ -31,8 +31,12 @@
   color: white;
 }
 
+.secondary-bg {
+  background-color: rgb(253, 252, 252);
+}
+
 .box-shadow {
-  box-shadow: 0 0 10px 8px whitesmoke;
+  box-shadow: 0 0 14px 8px rgb(232, 231, 231);
 }
 
 .btn-theme:hover {
@@ -66,6 +70,33 @@
 .hero-text-section {
   padding-top: 100px;
 }
+
+.regular-users-img {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  /* background-position: center; */
+  background-size: contain;
+  border: 3px solid white;
+}
+
+.img1 {
+  position: relative;
+  right: -60px;
+  z-index: 11;
+}
+
+.img2 {
+  position: relative;
+  right: -40px;
+  z-index: 10;
+}
+
+.img3 {
+  position: relative;
+  right: -20px;
+}
+
 /* hero section end */
 
 /* recommended jobs start */
@@ -79,7 +110,7 @@
   /* box-shadow: 0 0 15px 8px rgb(239, 237, 237); */
 }
 
-.job-card > .row > .col-2 > svg {
+.company-logo {
   width: 3rem;
   height: 4rem;
   position: relative;
@@ -97,6 +128,8 @@
 /* job-category-card */
 .job-category-card {
   border: 1px solid rgb(224, 222, 222);
+  width: 16rem;
+  height: 8rem;
 }
 
 /* job-category-card */
@@ -134,6 +167,18 @@
 @media (max-width: 720px) {
   .contact-form {
     width: 100%;
+  }
+
+  .job-card {
+    width: 100%;
+  }
+
+  .company-logo {
+    width: 2.5rem;
+    height: 2rem;
+    /* border: 1px solid black; */
+    top: 0px;
+    left: -8px;
   }
 }
 

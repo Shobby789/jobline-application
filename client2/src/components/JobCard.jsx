@@ -11,7 +11,7 @@ const JobCard = () => {
     <div className="card job-card text-center mb-4 mx-auto p-4 rounded-4 border shadow_hover">
       <div className="row">
         <div className="col-2">
-          <PiInstagramLogoFill />
+          <PiInstagramLogoFill className="company-logo" />
         </div>
         <div className="col-10 text-start">
           <Link

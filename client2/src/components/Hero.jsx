@@ -1,6 +1,10 @@
 import React from "react";
 import { IoSearchOutline } from "react-icons/io5";
 import Image from "../assets/hero.webp";
+import user1 from "../assets/user1.jpg";
+import user2 from "../assets/user2.jpg";
+import user3 from "../assets/user3.jpg";
+import user4 from "../assets/user4.jpg";
 
 const Hero = () => {
   return (
@@ -16,10 +20,10 @@ const Hero = () => {
               We are best global job finder agency and millions of <br />
               people used and trusted our platform.
             </p>
-            <div className="search-container input-group border py-1 px-2 rounded-5 mb-5">
+            <div className="search-container input-group border py-1 px-1 rounded-5 mb-5">
               <input
                 type="text"
-                className="form-control border-0 rounded-5 text-medium"
+                className="form-control border-0 rounded-5 text-medium py-2"
                 placeholder="Search by keyword or job"
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
@@ -31,9 +35,17 @@ const Hero = () => {
                 <IoSearchOutline />
               </span>
             </div>
-            <h6 className="fw-bold text-secondary ps-1 text-medium">
-              45K+ Regular Users.
-            </h6>
+            <div className="container px-0">
+              {/* <div className="d-flex justify-content-start border border-dark w-25">
+                <img src={user1} alt="" className="regular-users-img img1" />
+                <img src={user2} alt="" className="regular-users-img img2" />
+                <img src={user3} alt="" className="regular-users-img img3" />
+                <img src={user4} alt="" className="regular-users-img " />
+              </div> */}
+              <h6 className="fw-bold text-secondary ps-1 text-medium">
+                45K+ Regular Users.
+              </h6>
+            </div>
           </div>
           {/* hero image */}
           <div className="col-lg-5 col-md-5 col-sm-12 pt-0 pe-0 text-end">

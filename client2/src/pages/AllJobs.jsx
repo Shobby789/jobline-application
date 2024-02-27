@@ -4,7 +4,7 @@ import JobCard from "../components/JobCard";
 const AllJobs = () => {
   return (
     <>
-      <div className="container-fluid bg-light px-0 py-5">
+      <div className="container-fluid secondary-bg px-0 py-5">
         <div className="container py-5 mb-2">
           <h2 className="fw-bold text-center">Find Jobs</h2>
           <p className="text-secondary text-small text-center">Home / Jobs</p>
@@ -15,7 +15,7 @@ const AllJobs = () => {
           <div className="row">
             <div className="col-lg-4 col-md-4 col-sm-12">
               {/* job filter/search form */}
-              <form className="form bg-light py-4 px-3 rounded-4 mb-4">
+              <form className="form secondary-bg py-4 px-3 rounded-4 mb-4">
                 <div className="form-group mb-3">
                   <label htmlFor="" className="form-label text-medium">
                     Search by keyword
@@ -48,7 +48,7 @@ const AllJobs = () => {
                   </select>
                 </div>
               </form>
-              <div className="bg-light py-4 px-3 rounded-4">
+              <div className="secondary-bg py-4 px-3 rounded-4">
                 <h6 className="fw-semibold">Recruiting?</h6>
                 <p
                   className="text-small text-secondary"

@@ -6,7 +6,7 @@ import { MdOutlineEmail } from "react-icons/md";
 const Contact = () => {
   return (
     <>
-      <div className="container-fluid bg-light px-0 py-5">
+      <div className="container-fluid secondary-bg px-0 py-5">
         <div className="container py-5 mb-2">
           <h2 className="fw-bold text-center">Contact</h2>
           <p className="text-secondary text-small text-center">
@@ -17,7 +17,7 @@ const Contact = () => {
       <div className="container-fluid border-bottom py-5">
         <div className="container py-5 px-lg-5">
           <div className="row px-lg-5">
-            <div className="col-4 d-flex flex-column align-items-center gap-2 ">
+            <div className="col-lg-4 col-md-4 col-sm-12 d-flex flex-column align-items-center gap-2 ">
               <div className="ps-0">
                 <CiLocationOn style={{ height: "2.5rem", width: "2.5rem" }} />
               </div>
@@ -27,14 +27,14 @@ const Contact = () => {
                 Reprehenderit!
               </p>
             </div>
-            <div className="col-4 d-flex flex-column align-items-center gap-2 ">
+            <div className="col-lg-4 col-md-4 col-sm-12 d-flex flex-column align-items-center gap-2 ">
               <div>
                 <CiMobile3 style={{ height: "2.5rem", width: "2.5rem" }} />
               </div>
               <h6 className="fw-semibold">Call Us</h6>
               <p className="text-secondary text-medium">012 345 6789</p>
             </div>
-            <div className="col-4 d-flex flex-column align-items-center gap-2 ">
+            <div className="col-lg-4 col-md-4 col-sm-12 d-flex flex-column align-items-center gap-2 ">
               <div>
                 <MdOutlineEmail style={{ height: "2.5rem", width: "2.5rem" }} />
               </div>
@@ -46,11 +46,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="container px-lg-5 py-5">
-          <form className="contact-form py-lg-5 border rounded-4">
-            <div className="container px-lg-5 mb-4">
-              <h5 className="semibold">Leave A Message</h5>
+          <form className="contact-form py-5 border rounded-4">
+            <div className="container px-3  mb-4">
+              <h5 className="fw-semibold">Leave A Message</h5>
             </div>
-            <div className="row px-lg-5 mt-3">
+            <div className="row px-lg-5 px-3 mt-3">
               <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
                 <label htmlFor="Name" className="form label mb-2">
                   Your Name
@@ -73,7 +73,7 @@ const Contact = () => {
                 />
               </div>
             </div>
-            <div className="container mb-3 px-lg-5">
+            <div className="container px-3 mb-3 px-lg-5">
               <label htmlFor="subject" className="form label mb-2">
                 Subject
               </label>
@@ -83,7 +83,7 @@ const Contact = () => {
                 placeholder="Subject*"
               />
             </div>
-            <div className="container mb-3 px-lg-5">
+            <div className="container px-3 mb-3 px-lg-5">
               <label htmlFor="message" className="form label mb-2">
                 Your Message
               </label>
@@ -96,7 +96,7 @@ const Contact = () => {
                 placeholder="Write your message..."
               ></textarea>
             </div>
-            <div className="container px-lg-5 text-end pt-3">
+            <div className="container px-lg-5 px-3 text-end pt-3">
               <button
                 className="btn btn-dark px-3 py-2 text-medium rounded-5"
                 type="submit"

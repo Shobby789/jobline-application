@@ -14,7 +14,7 @@ const Home = () => {
     <>
       <Hero />
       {/* recommended jobs */}
-      <div className="container-fluid bg-light py-5">
+      <div className="container-fluid secondary-bg py-5">
         <div className="container px-lg-1">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12 text-start px-lg-4">
@@ -80,7 +80,7 @@ const Home = () => {
       </div>
 
       {/* world top companies start */}
-      <div className="container-fluid bg-light py-5">
+      <div className="container-fluid secondary-bg py-5">
         <div className="container py-5 text-center">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12 pe-5"></div>
