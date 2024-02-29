@@ -12,7 +12,7 @@ const Login = () => {
     <div className="container-fluid min-vh-100">
       <div className="container aut-page">
         <div className="row min-vh-100">
-          <div className="col-lg-7 col-md-7 col-sm-12 d-flex align-items-center justify-content-center pe-lg-5">
+          <div className="col-lg-7m col-md-7 col-sm-12 d-flex align-items-center justify-content-center pe-lg-5">
             <img src={authImg} alt="" className="img-fluid aut-img" />
           </div>
           <div className="col-lg-5 col-md-5 col-sm-12 d-flex flex-column align-items-start justify-content-center pe-lg-5">
@@ -43,13 +43,13 @@ const Login = () => {
               <div className="">
                 <button
                   type="submit"
-                  className="w-100 btn btn-dark text-medium py-2"
+                  className="fw-semibold w-100 btn btn-dark text-medium py-2"
                 >
                   Sign in
                 </button>
               </div>
               <div className="text-center pt-4">
-                <p className="text-small fw-semibold text-secondary">
+                <p className="text-medium fw-semibold text-secondary">
                   Don't have an account?
                   <Link
                     to={"/sign-up"}

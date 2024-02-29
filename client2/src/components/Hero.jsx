@@ -23,7 +23,7 @@ const Hero = () => {
             <div className="search-container input-group border py-1 px-1 rounded-5 mb-5">
               <input
                 type="text"
-                className="form-control border-0 rounded-5 text-medium py-2"
+                className="form-control border-0 rounded-5 text-medium py-2 ps-3"
                 placeholder="Search by keyword or job"
                 aria-label="Recipient's username"
                 aria-describedby="basic-addon2"
@@ -35,14 +35,14 @@ const Hero = () => {
                 <IoSearchOutline />
               </span>
             </div>
-            <div className="container px-0">
-              {/* <div className="d-flex justify-content-start border border-dark w-25">
+            <div className="container px-0 d-flex justify-content-start align-items-center">
+              <div className="d-flex justify-content-start" style={{width:"160px"}}>
                 <img src={user1} alt="" className="regular-users-img img1" />
                 <img src={user2} alt="" className="regular-users-img img2" />
                 <img src={user3} alt="" className="regular-users-img img3" />
-                <img src={user4} alt="" className="regular-users-img " />
-              </div> */}
-              <h6 className="fw-bold text-secondary ps-1 text-medium">
+                <img src={user4} alt="" className="regular-users-img img4" />
+              </div>
+              <h6 className="fw-bold text-secondary ps-1 pt-3 text-medium">
                 45K+ Regular Users.
               </h6>
             </div>
