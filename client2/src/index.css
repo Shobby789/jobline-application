@@ -5,7 +5,7 @@
 }
 
 :root {
-  /* --theme-color: blue; */
+  --theme-color: blue;
   --theme-color: black;
 }
 
@@ -47,6 +47,32 @@
 
 /* common/reusable classes end */
 
+.aut-page {
+  width: 100%;
+  height: 100vh;
+}
+
+.aut-img {
+  width: 90%;
+  height: 95vh;
+}
+
+@media (max-width: 720px) {
+  .aut-page {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .aut-page > form {
+    padding-bottom: 50px;
+  }
+
+  .aut-img {
+    width: 100%;
+    height: 50vh;
+  }
+}
+
 /* Navbar start */
 .nav-link {
   font-weight: 500;
@@ -63,6 +89,12 @@
 .btn-close:focus {
   box-shadow: none !important;
   outline: none !important;
+}
+
+.profile-dropdown {
+  background-color: transparent;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 /* Navbar end */
 

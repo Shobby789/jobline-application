@@ -76,9 +76,90 @@ const JobDetails = () => {
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12 text-end">
-              <button className="btn btn-dark rounded-5 py-2 px-3 text-small fw-semibold">
+              <button
+                className="btn btn-dark rounded-5 py-2 px-3 text-small fw-semibold"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
                 Apply Now
               </button>
+            </div>
+          </div>
+          <div
+            className="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div className="modal-dialog">
+              <div className="modal-content">
+                <div className="modal-header border-0">
+                  <h1 className="modal-title fs-5" id="staticBackdropLabel">
+                    Apply for this job
+                  </h1>
+                  <button
+                    type="button"
+                    className="btn-close text-small"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div className="modal-body border-0">
+                  <div className="container py-2">
+                    <form action="" className="">
+                      <div className="form-group mb-3">
+                        <label
+                          htmlFor=""
+                          className="form-label fw-semibold text-medium"
+                        >
+                          Upload CV
+                        </label>
+                        <input
+                          type="file"
+                          name=""
+                          id=""
+                          className="form-control text-medium"
+                        />
+                      </div>
+                      <div className="form-group mb-3">
+                        <label
+                          htmlFor=""
+                          className="text-medium fw-semibold mb-2"
+                        >
+                          Message
+                        </label>
+                        <textarea
+                          name=""
+                          className="form-control py-2 px-2 text-medium"
+                          id=""
+                          cols="30"
+                          rows="7"
+                          placeholder="Send any message..."
+                        ></textarea>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div className="modal-footer border-0 pt-0">
+                  <button
+                    type="button"
+                    className="btn btn-danger rounded-5 px-3 text-medium"
+                    data-bs-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="button"
+                    className="btn btn-dark rounded-5 px-3 text-medium"
+                    data-bs-dismiss="modal"
+                  >
+                    Apply
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>

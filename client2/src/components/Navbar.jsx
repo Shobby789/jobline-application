@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <>
       <nav className="navbar navbar-expand-lg py-3 border-bottom">
@@ -58,12 +59,38 @@ const Navbar = () => {
               </ul>
             </div>
           </div>
-          <Link
-            to="/sign-up"
-            className="btn btn-dark bt-sm btn-sm px-3 py-2 rounded-pill login-btn"
-          >
-            Sign Up
-          </Link>
+          {isLoggedIn ? (
+            <div className="dropdown border-0">
+              <button
+                className="dropdown-toggle border-0 profile-dropdown"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown button
+              </button>
+              <ul className="dropdown-menu py-3 dropdown-menu-light">
+                <li className="mb-2">
+                  <a className="dropdown-item" href="#">
+                    Action
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Another action
+                  </a>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <Link
+              to="/sign-up"
+              className="btn btn-dark bt-sm btn-sm px-3 py-2 rounded-pill login-btn"
+            >
+              Sign Up
+            </Link>
+          )}
+
           <button
             className="navbar-toggler"
             type="button"
