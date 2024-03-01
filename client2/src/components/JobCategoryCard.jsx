@@ -3,7 +3,7 @@ import React from "react";
 const JobCategoryCard = ({ id, title, icon, seats }) => {
   return (
     <div
-      className="card job-category-card mx-auto pt-3 d-flex justify-content-center align-items-center shadow_hover"
+      className="card job-category-card mx-auto pt-3 d-flex justify-content-center align-items-center"
       id={id}
     >
       {/* <img src="" className="card-img-top" alt="..." /> */}

@@ -32,7 +32,7 @@
 }
 
 .secondary-bg {
-  background-color: rgb(253, 252, 252);
+  background-color: whitesmoke;
 }
 
 .box-shadow {
@@ -60,7 +60,7 @@
 @media (max-width: 720px) {
   .aut-page {
     width: 100%;
-    height: 100vh;
+    height: 105vh;
   }
 
   .aut-page > form {
@@ -69,7 +69,7 @@
 
   .aut-img {
     width: 100%;
-    height: 50vh;
+    height: 40vh;
   }
 }
 
@@ -114,19 +114,26 @@
 
 .img1 {
   position: relative;
-  right: -60px;
+  /* right: -60px; */
   z-index: 11;
 }
 
 .img2 {
   position: relative;
-  right: -40px;
-  z-index: 10;
+  left: -25px;
+  z-index: 12;
 }
 
 .img3 {
   position: relative;
-  right: -20px;
+  left: -50px;
+  z-index: 13;
+}
+
+.img4 {
+  position: relative;
+  left: -75px;
+  z-index: 14;
 }
 
 /* hero section end */
@@ -164,6 +171,12 @@
   height: 8rem;
 }
 
+.job-category-card:hover{
+  box-shadow: 0 5px 15px 6px rgb(226, 225, 225);
+  cursor: pointer;
+  transition: .3s;
+}
+
 /* job-category-card */
 
 .subscribe-form {
@@ -176,7 +189,7 @@
 
 /* company-card */
 .shadow_hover:hover {
-  box-shadow: 0 5px 10px 5px rgb(245, 243, 243);
+  box-shadow: 0 5px 15px 6px rgb(231, 231, 231);
   cursor: pointer;
   transition: 0.3s;
 }
@@ -208,24 +221,7 @@
   .company-logo {
     width: 2.5rem;
     height: 2rem;
-    /* border: 1px solid black; */
     top: 0px;
     left: -8px;
   }
 }
-
-/* .auth-page {
-  width: 100%;
-  height: 100vh;
-  padding: 0 !important;
-}
-
-.left-side {
-  width: 50%;
-  height: 100vh;
-}
-
-.right-side {
-  width: 50%;
-  height: 100vh;
-} */

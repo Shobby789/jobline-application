@@ -54,13 +54,13 @@ const SignUp = () => {
               <div className="">
                 <button
                   type="submit"
-                  className="w-100 btn btn-dark text-medium py-2"
+                  className="fw-semibold w-100 btn btn-dark text-medium py-2"
                 >
                   Sign up
                 </button>
               </div>
               <div className="text-center pt-4">
-                <p className="text-small fw-semibold text-secondary">
+                <p className="text-medium fw-semibold text-secondary">
                   Already have an account?
                   <Link
                     to={"/sign-in"}
