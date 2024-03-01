@@ -104,8 +104,8 @@
 }
 
 .regular-users-img {
-  width: 55px;
-  height: 55px;
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   /* background-position: center; */
   background-size: contain;
@@ -120,19 +120,19 @@
 
 .img2 {
   position: relative;
-  left: -25px;
+  left: -20px;
   z-index: 12;
 }
 
 .img3 {
   position: relative;
-  left: -50px;
+  left: -43px;
   z-index: 13;
 }
 
 .img4 {
   position: relative;
-  left: -75px;
+  left: -65px;
   z-index: 14;
 }
 
@@ -171,11 +171,11 @@
   height: 8rem;
 }
 
-.job-category-card:hover{
+/* .job-category-card:hover {
   box-shadow: 0 5px 15px 6px rgb(226, 225, 225);
   cursor: pointer;
-  transition: .3s;
-}
+  transition: 0.3s;
+} */
 
 /* job-category-card */
 
@@ -189,7 +189,8 @@
 
 /* company-card */
 .shadow_hover:hover {
-  box-shadow: 0 5px 15px 6px rgb(231, 231, 231);
+  /* box-shadow: 0 5px 15px 6px rgb(240, 239, 239); */
+  box-shadow: 0 5px 22px 6px whitesmoke;
   cursor: pointer;
   transition: 0.3s;
 }

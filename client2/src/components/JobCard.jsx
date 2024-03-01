@@ -49,7 +49,7 @@ const JobCard = () => {
               <p className="card-text text-secondary text-small">$35K - $45K</p>
             </div>
           </div>
-          <button className="job-type-btn rounded-5 text-small" disabled>
+          <button className="job-type-btn rounded-2 text-small" disabled>
             Part Time
           </button>
         </div>

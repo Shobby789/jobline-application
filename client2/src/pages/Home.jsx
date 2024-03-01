@@ -15,7 +15,7 @@ const Home = () => {
       <Hero />
       {/* recommended jobs */}
       <div className="container-fluid secondary-bg py-5">
-        <div className="container px-lg-1">
+        <div className="container px-lg-1 py-3">
           <div className="row">
             <div className="col-lg-6 col-md-6 col-sm-12 text-start px-lg-4">
               <h4 className="fw-semibold">Recommended Jobs</h4>
@@ -39,7 +39,7 @@ const Home = () => {
             <JobCard />
           </div>
           <div className="container text-center pb-3">
-            <Link to="/" className="btn btn-dark btn-sm py-2 px-3 rounded-5">
+            <Link to="/" className="btn btn-dark btn-sm py-2 px-3 rounded-2">
               See More
             </Link>
           </div>
@@ -56,7 +56,7 @@ const Home = () => {
             <div className="col-lg-6 col-md-6 col-sm-12 text-end">
               <a
                 href="/"
-                className="text-decoration-none px-3 py-2 rounded-5 btn-theme"
+                className="text-decoration-none px-3 py-2 rounded-2 btn-theme"
               >
                 See More
               </a>
@@ -96,7 +96,7 @@ const Home = () => {
               </p>
               <a
                 href="/"
-                className="btn btn-outline-dark fw-semibold fs-6 px-3 py-2 rounded-5"
+                className="btn btn-outline-dark fw-semibold fs-6 px-3 py-2 rounded-2"
               >
                 Get Started
               </a>

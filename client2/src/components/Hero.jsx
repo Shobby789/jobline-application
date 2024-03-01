@@ -8,7 +8,7 @@ import user4 from "../assets/user4.jpg";
 
 const Hero = () => {
   return (
-    <main className="container-fluid hero">
+    <main className="container-fluid hero pb-5">
       <div className="container">
         <div className="row">
           {/* hero text */}
@@ -36,7 +36,10 @@ const Hero = () => {
               </span>
             </div>
             <div className="container px-0 d-flex justify-content-start align-items-center">
-              <div className="d-flex justify-content-start" style={{width:"160px"}}>
+              <div
+                className="d-flex justify-content-start"
+                style={{ width: "125px" }}
+              >
                 <img src={user1} alt="" className="regular-users-img img1" />
                 <img src={user2} alt="" className="regular-users-img img2" />
                 <img src={user3} alt="" className="regular-users-img img3" />

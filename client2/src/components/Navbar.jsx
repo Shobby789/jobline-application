@@ -3,7 +3,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   return (
     <>
       <nav className="navbar navbar-expand-lg py-3 border-bottom">
@@ -70,22 +70,35 @@ const Navbar = () => {
                 Dropdown button
               </button>
               <ul className="dropdown-menu py-3 dropdown-menu-light">
-                <li className="mb-2">
-                  <a className="dropdown-item" href="#">
-                    Action
-                  </a>
+                <li className="py-1">
+                  <Link to="/" className="dropdown-item">
+                    Profile
+                  </Link>
                 </li>
-                <li>
-                  <a className="dropdown-item" href="#">
-                    Another action
-                  </a>
+                <li className="py-1">
+                  <Link to="/" className="dropdown-item">
+                    Applied Jobs
+                  </Link>
+                </li>
+                <li className="py-1">
+                  <Link to="/" className="dropdown-item">
+                    Job Alerts
+                  </Link>
+                </li>
+                {/* <li className="py-1">
+                  <Link to="/" className="dropdown-item">
+                    Change Password
+                  </Link>
+                </li> */}
+                <li className="py-1 ps-3">
+                  <button className="list-group-item ps-1">Logout</button>
                 </li>
               </ul>
             </div>
           ) : (
             <Link
               to="/sign-up"
-              className="btn btn-dark bt-sm btn-sm px-3 py-2 rounded-pill login-btn"
+              className="btn btn-dark bt-sm btn-sm px-3 py-2 rounded-2 login-btn"
             >
               Sign Up
             </Link>

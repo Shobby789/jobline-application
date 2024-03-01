@@ -47,7 +47,7 @@ const Contact = () => {
         </div>
         <div className="container px-lg-5 py-5">
           <form className="contact-form py-5 border rounded-4">
-            <div className="container px-3  mb-4">
+            <div className="container px-3 ps-lg-5  mb-4">
               <h5 className="fw-semibold">Leave A Message</h5>
             </div>
             <div className="row px-lg-5 px-3 mt-3">
@@ -98,7 +98,7 @@ const Contact = () => {
             </div>
             <div className="container px-lg-5 px-3 text-end pt-3">
               <button
-                className="btn btn-dark px-3 py-2 text-medium rounded-5"
+                className="btn btn-dark px-3 py-2 text-medium rounded-2"
                 type="submit"
               >
                 Send Message

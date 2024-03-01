@@ -7,11 +7,13 @@ const Layout = () => {
   const location = useLocation();
   const shouldComponentRender =
     location.pathname !== "/sign-in" && location.pathname !== "/sign-up";
+  const hideFooter = location.pathname.startsWith("/user-profile/");
   return (
     <>
       {shouldComponentRender && <Navbar />}
       <Outlet />
       {shouldComponentRender && <Footer />}
+      {/* {!hideFooter && <Footer />} */}
     </>
   );
 };
