@@ -45,6 +45,13 @@
   transition: 0.3s;
 }
 
+.card-badge{
+  background-color: rgb(199, 197, 197);
+  font-size: .6rem;
+  font-weight: 600;
+  padding: 5px 8px;
+}
+
 /* common/reusable classes end */
 
 .aut-page {

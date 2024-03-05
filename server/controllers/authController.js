@@ -41,7 +41,14 @@ module.exports.LoginUser = async (req, res) => {
           .status(201)
           .send({
             status: "Login successfull",
-            data: { user: checkUser, token },
+            data: { 
+              user: {
+              _id: checkUser._id, 
+              username: checkUser.username, 
+              email: checkUser.email
+              },
+              token 
+            },
           });
       } else {
         return res.status(201).send({ status: "Wrong email or password" });
@@ -52,3 +59,4 @@ module.exports.LoginUser = async (req, res) => {
     res.status(400).send({ state: "Something went wrong" });
   }
 };
+
