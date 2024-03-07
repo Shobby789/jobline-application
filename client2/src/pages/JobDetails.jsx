@@ -26,10 +26,10 @@ const JobDetails = () => {
         <div className="container border-bottom py-5">
           <div className="row">
             <div className="col-lg-8 col-md-8 col-sm-12 text-start d-flex gap-3">
-              <div className="company-logo">
+              <div className="company-logo pt-2">
                 <IoLogoInstagram style={{ width: "4rem", height: "4rem" }} />
               </div>
-              <div className="container pt-1">
+              <div className="container pt-0">
                 <h4 className="fw-semibold">Software Engineer</h4>
                 <div className="row w-100 my-2">
                   <div className="col-lg-3 col-md-3 col-sm-12">
@@ -67,12 +67,12 @@ const JobDetails = () => {
                   </div>
                   <div className="col-lg-3 col-md-3 col-sm-12"></div>
                 </div>
-                <button
+                <span
                   disabled
-                  className="btn btn-secondary rounded-5 btn-sm mt-lg-2 px-3 text-medium"
+                  className="card-badge rounded-5 mt-lg-2 text-dark"
                 >
                   Full Time
-                </button>
+                </span>
               </div>
             </div>
             <div className="col-lg-4 col-md-4 col-sm-12 text-end">
