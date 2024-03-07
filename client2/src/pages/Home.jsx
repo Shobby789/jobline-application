@@ -1,15 +1,64 @@
-import React from "react";
-import Navbar from "../components/Navbar";
+import React, { useEffect } from "react";
 import Hero from "../components/Hero";
 import JobCard from "../components/JobCard";
 import { jobCategories } from "../utils/data";
 import JobCategoryCard from "../components/JobCategoryCard";
 import Testimonials from "../components/Testimonials";
 import Subscribe from "../components/Subscribe";
-import Footer from "../common/Footer";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Home = () => {
+  const fetchJobs = async () => {
+    const options = {
+      method: "POST",
+      url: "https://linkedin-jobs-search.p.rapidapi.com/",
+      headers: {
+        "content-type": "application/json",
+        "X-RapidAPI-Key": "4baf87a271msh53b8f75b8c3bb8ep1dbb49jsnddffa55d6b58",
+        "X-RapidAPI-Host": "linkedin-jobs-search.p.rapidapi.com",
+      },
+      data: {
+        search_terms: "python programmer",
+        location: "Chicago, IL",
+        page: "1",
+      },
+    };
+    try {
+      const response = await axios.request(options);
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  const fetchJobs2 = async () => {
+    const options = {
+      method: "GET",
+      url: "https://indeed-jobs-api.p.rapidapi.com/indeed-us/",
+      params: {
+        offset: "0",
+        keyword: "python",
+        location: "california",
+      },
+      headers: {
+        "X-RapidAPI-Key": "4baf87a271msh53b8f75b8c3bb8ep1dbb49jsnddffa55d6b58",
+        "X-RapidAPI-Host": "indeed-jobs-api.p.rapidapi.com",
+      },
+    };
+
+    try {
+      const response = await axios.request(options);
+      console.log(response.data);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
+  useEffect(() => {
+    // fetchJobs();
+    fetchJobs2();
+  }, []);
   return (
     <>
       <Hero />
