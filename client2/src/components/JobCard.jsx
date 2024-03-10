@@ -5,20 +5,31 @@ import { CiClock2 } from "react-icons/ci";
 import { LiaMoneyBillWaveAltSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
 
-const JobCard = () => {
-  const id = "1234";
+const JobCard = ({
+  id,
+  title,
+  date_posted,
+  min_salary,
+  max_salary,
+  location,
+  c_logo,
+  job_type,
+}) => {
   return (
-    <div className="card job-card text-center mb-4 mx-auto p-4 rounded-4 border shadow_hover">
+    <div
+      className="card job-card text-center mb-4 mx-auto p-4 rounded-4 border shadow_hover"
+      id={id}
+    >
       <div className="row">
-        <div className="col-2">
+        <div className="col-1">
           <PiInstagramLogoFill className="company-logo" />
         </div>
-        <div className="col-10 text-start">
+        <div className="col-11 text-start ps-3">
           <Link
-            to={`/jobs/job-details`}
+            to={`/jobs/job-details/${id}`}
             className="fs-6 text-decoration-none card-title fw-bold"
           >
-            UX Designer
+            {title}
           </Link>
           <div className="d-flex gap-3 mb-2 mt-2">
             <div className="d-flex gap-1 ps-0">
@@ -26,9 +37,7 @@ const JobCard = () => {
                 className="fs-6"
                 style={{ position: "relative", top: "1px" }}
               />
-              <p className="card-text text-secondary text-small">
-                Karachi, Pakistan
-              </p>
+              <p className="card-text text-secondary text-small">{location}</p>
             </div>
             <div className="d-flex gap-1">
               <CiClock2
@@ -36,7 +45,7 @@ const JobCard = () => {
                 style={{ position: "relative", top: "1px" }}
               />
               <p className="card-text text-secondary text-small">
-                11 hours ago
+                {date_posted}
               </p>
             </div>
           </div>
@@ -46,11 +55,13 @@ const JobCard = () => {
                 className="fs-6"
                 style={{ position: "relative", top: "1px" }}
               />
-              <p className="card-text text-secondary text-small">$35K - $45K</p>
+              <p className="card-text text-secondary text-small">
+                ${min_salary}K - ${max_salary}K
+              </p>
             </div>
           </div>
           <button className="job-type-btn rounded-2 text-small" disabled>
-            Part Time
+            {job_type}
           </button>
         </div>
       </div>

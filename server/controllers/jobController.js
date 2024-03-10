@@ -88,3 +88,4 @@ module.exports.applyForJob = async (req, res) => {
 // experience: "",
 // company: "",
 // coverLetter: "",
+

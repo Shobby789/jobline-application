@@ -1,5 +1,6 @@
 import React from "react";
 import JobCard from "../components/JobCard";
+import { JobData } from "../utils/data";
 
 const AllJobs = () => {
   return (
@@ -66,14 +67,32 @@ const AllJobs = () => {
               </div>
             </div>
             <div className="col-lg-8 col-md-8 col-sm-12 d-flex flex-wrap justify-content-start gap-4 px-3 pt-1">
-              <JobCard />
-              <JobCard />
-              <JobCard />
-              <JobCard />
-              <JobCard />
-              <JobCard />
-              <JobCard />
-              <JobCard />
+              {JobData.map(
+                ({
+                  id,
+                  job_title,
+                  min_salary,
+                  max_salary,
+                  job_location,
+                  date_posted,
+                  company_logo_url,
+                  job_type,
+                }) => {
+                  return (
+                    <JobCard
+                      key={id}
+                      id={id}
+                      title={job_title}
+                      date_posted={date_posted}
+                      min_salary={min_salary}
+                      max_salary={max_salary}
+                      c_logo={company_logo_url}
+                      location={job_location}
+                      job_type={job_type}
+                    />
+                  );
+                }
+              )}
             </div>
           </div>
         </div>

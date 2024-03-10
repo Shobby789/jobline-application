@@ -17,18 +17,20 @@ import SignUp from "./pages/SignUp.jsx";
 import Login from "./pages/Login.jsx";
 import JobDetails from "./pages/JobDetails.jsx";
 import UserProfile from "./pages/UserProfile.jsx";
+import Sidebar from "./admin/components/Sidebar.jsx";
 
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
       <Route index element={<Home />} />
       <Route path="/all-jobs" element={<AllJobs />} />
-      <Route path="/jobs/job-details" element={<JobDetails />} />
+      <Route path="/jobs/job-details/:{id}" element={<JobDetails />} />
       <Route path="/companies" element={<Companies />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/user-profile/:_id" element={<UserProfile />} />
       <Route path="/sign-up" element={<SignUp />} />
       <Route path="/sign-in" element={<Login />} />
+      <Route path="/employer-dashboard" element={<Sidebar />} />
     </Route>
   )
 );
