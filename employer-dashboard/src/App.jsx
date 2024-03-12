@@ -13,6 +13,8 @@ import MyJobs from "./pages/MyJobs";
 import Applications from "./pages/Applications";
 import FindTalent from "./pages/FindTalent";
 import Settings from "./pages/Settings";
+import CompanyProfile from "./pages/CompanyProfile";
+import PostANewJob from "./pages/PostANewJob";
 
 export const router = createBrowserRouter([
   {
@@ -24,11 +26,19 @@ export const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: "my-jobs",
+        path: "company-profile",
+        element: <CompanyProfile />,
+      },
+      {
+        path: "post-a-new-job",
+        element: <PostANewJob />,
+      },
+      {
+        path: "manage-jobs",
         element: <MyJobs />,
       },
       {
-        path: "applications",
+        path: "all-applicants",
         element: <Applications />,
       },
       {

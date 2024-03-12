@@ -30,7 +30,7 @@ const Sidebar = () => {
           </li>
           <li className="my-3 px-0 py-2">
             <Link
-              to="/my-jobs"
+              to="/company-profile"
               className="text-decoration-none text-medium fw-normal text-secondary d-flex align-items-center justify-content-start gap-2"
             >
               <IoPersonOutline className="fs-5" />
@@ -39,7 +39,7 @@ const Sidebar = () => {
           </li>
           <li className="my-3 px-0 py-2">
             <Link
-              to="/applications"
+              to="/post-a-new-job"
               className="text-decoration-none text-medium fw-normal text-secondary d-flex align-items-center justify-content-start gap-2"
             >
               <LuSendHorizonal className="fs-5" />
@@ -48,7 +48,7 @@ const Sidebar = () => {
           </li>
           <li className="my-3 px-0 py-2">
             <Link
-              to="/find-talent"
+              to="/manage-jobs"
               className="text-decoration-none text-medium fw-normal text-secondary d-flex align-items-center justify-content-start gap-2"
             >
               <IoBagCheckOutline className="fs-5" />
@@ -57,11 +57,20 @@ const Sidebar = () => {
           </li>
           <li className="my-3 px-0 py-2">
             <Link
+              to="/all-applicants"
+              className="text-decoration-none text-medium fw-normal text-secondary d-flex align-items-center justify-content-start gap-2"
+            >
+              <CiViewList className="fs-5" />
+              All Applications
+            </Link>
+          </li>
+          <li className="my-3 px-0 py-2">
+            <Link
               to="/find-talent"
               className="text-decoration-none text-medium fw-normal text-secondary d-flex align-items-center justify-content-start gap-2"
             >
               <CiViewList className="fs-5" />
-              All Applicants
+              Find Talent
             </Link>
           </li>
           <li className="my-3 px-0 py-2">
