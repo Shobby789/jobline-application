@@ -1,9 +1,0 @@
-.recommended-wrapper {
-  background-color: whitesmoke;
-  min-height: 100vh;
-}
-
-.recommended-wrapper > :first-child > :nth-child(2) p {
-  color: rgb(140, 137, 137);
-  font-weight: 500;
-}

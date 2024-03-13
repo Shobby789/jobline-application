@@ -1,8 +1,0 @@
-.reviews-wrapper {
-  background-color: whitesmoke;
-}
-
-.reviews-wrapper .container > :nth-child(2) {
-  font-weight: 500;
-  color: var(--text-secondary);
-}
