@@ -1,6 +1,7 @@
 import React from "react";
 import JobCard from "../components/JobCard";
 import { JobData } from "../utils/data";
+import JobCard2 from "../components/JobCard2";
 
 const AllJobs = () => {
   return (
@@ -79,7 +80,7 @@ const AllJobs = () => {
                   job_type,
                 }) => {
                   return (
-                    <JobCard
+                    <JobCard2
                       key={id}
                       id={id}
                       title={job_title}

@@ -7,7 +7,7 @@ const CompanyCard = () => {
   return (
     <div className="row border rounded-4 px-3 py-4 position-relative mb-4 shadow_hover">
       <div className="col-lg-1 col-md-2 col-sm-3 px-0">
-        <PiInstagramLogoFill style={{ width: "4rem", height: "4rem" }} />
+        <PiInstagramLogoFill className="company-logo company-profile-logo" />
       </div>
       <div className="col-lg-11 col-md-10 col-sm-9 px-3">
         <h5 className="fw-semibold mb-3">Upwork</h5>

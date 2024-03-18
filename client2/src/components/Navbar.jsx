@@ -3,7 +3,7 @@ import { HiOutlineMenu } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <>
       <nav className="navbar navbar-expand-lg py-3 border-bottom">
@@ -112,7 +112,6 @@ const Navbar = () => {
             aria-controls="offcanvasNavbar"
             aria-label="Toggle navigation"
           >
-            {/* <span className="navbar-toggler-icon"></span>  */}
             <HiOutlineMenu className="" />
           </button>
         </div>

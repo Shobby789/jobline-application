@@ -1,0 +1,43 @@
+.employer-dashboard {
+  height: 100vh;
+  position: relative;
+  display: flex;
+}
+
+.sidebar-container {
+  width: 20%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  border-right: 1px solid whitesmoke;
+}
+
+.employer-content {
+  width: calc(100% - 20%); /* Subtract the width of the sidebar from 100% */
+  margin-left: 20%;
+}
+
+.top-bar {
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .employer-dashboard {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .sidebar-container {
+    width: 100%;
+    height: auto;
+    position: static;
+    border: none;
+  }
+
+  .employer-content {
+    width: 100%; /* Full width */
+    margin-left: 0; /* Remove margin */
+    padding-left: 0; /* Remove padding */
+  }
+}

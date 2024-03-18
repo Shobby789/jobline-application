@@ -5,8 +5,8 @@ const UserProfile = () => {
   return (
     <div className="continer-fluid">
       <div className="continer-fluid">
-        <div className="container">
-          <div className="container mb-4 px-lg-5 py-5">
+        <div className="container px-sm-4">
+          <div className="container mb-4 py-5">
             <div className="row mb-3">
               <h4 className="fw-semibold mb-4">My Profile</h4>
               <div className="">
@@ -70,7 +70,7 @@ const UserProfile = () => {
               </div>
               <div className="col-lg-6 col-md-6 col-sm-12 mb-3">
                 <div className="row">
-                  <div className="col-lg-6 ol-md-6 col-12">
+                  <div className="col-lg-6 col-md-6 col-12 mb-sm-3">
                     <label htmlFor="" className="form-label text-medium p-1">
                       Current Salary
                     </label>
@@ -81,7 +81,7 @@ const UserProfile = () => {
                       <option value="3">45+</option>
                     </select>
                   </div>
-                  <div className="col-lg-6 ol-md-6 col-12">
+                  <div className="col-lg-6 col-md-6 col-12">
                     <label htmlFor="" className="form-label text-medium p-1">
                       Expected Salary
                     </label>
@@ -132,7 +132,7 @@ const UserProfile = () => {
                   <option value="3">PhD</option>
                 </select>
               </div>
-              <div className="col-lg-6 ol-md-6 col-12 mb-3"></div>
+              <div className="col-lg-6 ol-md-6 col-12"></div>
             </div>
             <div className="row mb-5">
               <div className="col-12">
@@ -150,14 +150,14 @@ const UserProfile = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-2">
+              <div className="col-lg-2 col-md-3 col-sm-12">
                 <button className="w-100 btn btn-dark px-3 rounded-2 text-medium">
                   Save
                 </button>
               </div>
             </div>
           </div>
-          <div className="container px-lg-5 pb-5">
+          <div className="container pb-5">
             <div className="row mt-5 mb-3">
               <h4 className="fw-semibold">Social Networks</h4>
             </div>
@@ -206,14 +206,14 @@ const UserProfile = () => {
               </div>
             </div>
             <div className="row">
-              <div className="col-2">
+              <div className="col-lg-2 col-md-3 col-sm-12">
                 <button className="w-100 btn btn-dark px-3 rounded-2 text-medium">
                   Save
                 </button>
               </div>
             </div>
           </div>
-          <div className="container px-lg-5 py-5">
+          <div className="container py-5">
             <div className="row">
               <table className="table text-center">
                 <thead>

@@ -5,7 +5,7 @@ import { CiClock2 } from "react-icons/ci";
 import { LiaMoneyBillWaveAltSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
 
-const JobCard = ({
+const JobCard2 = ({
   id,
   title,
   date_posted,
@@ -17,7 +17,7 @@ const JobCard = ({
 }) => {
   return (
     <div
-      className="card job-card text-center mb-4 mx-auto p-4 rounded-4 border shadow_hover"
+      className="card job-card2 text-center mb-4 mx-auto p-4 rounded-4 border shadow_hover"
       id={id}
     >
       <div className="row w-lg-50">
@@ -71,7 +71,7 @@ const JobCard = ({
   );
 };
 
-export default JobCard;
+export default JobCard2;
 
 {
   /* <p className="text-secondary text-small align-self-end">Part Time</p>

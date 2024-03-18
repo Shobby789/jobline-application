@@ -40,7 +40,7 @@ const SignUp = () => {
                   placeholder="JonDoe@gmail.com"
                 />
               </div>
-              <div className="mb-5">
+              <div className="mb-3">
                 <label htmlFor="" className="fw-semibold form-label">
                   Create a Password
                   <span className="badge ms-1 ps-0 fs-6 text-danger">*</span>
@@ -48,8 +48,22 @@ const SignUp = () => {
                 <input
                   type="password"
                   className="form-control py-3 text-medium"
-                  placeholder=""
+                  placeholder="Create a strong password"
                 />
+              </div>
+              <div className="mb-5">
+                <label htmlFor="" className="fw-semibold form-label">
+                  Sign up as
+                  <span className="badge ms-1 ps-0 fs-6 text-danger">*</span>
+                </label>
+                <select
+                  class="form-select py-3 text-medium"
+                  aria-label="Default select example"
+                >
+                  <option selected>Open this select menu</option>
+                  <option value="1">Looking for a job</option>
+                  <option value="2">I am Hiring</option>
+                </select>
               </div>
               <div className="">
                 <button
