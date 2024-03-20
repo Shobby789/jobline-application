@@ -81,6 +81,10 @@
 }
 
 /* Navbar start */
+.navbar-expand-lg {
+  z-index: 100;
+}
+
 .nav-link {
   font-weight: 500;
   font-size: 1rem;
@@ -98,11 +102,41 @@
   outline: none !important;
 }
 
-.profile-dropdown {
-  background-color: transparent;
-  font-size: 0.9rem;
-  font-weight: 500;
+.profile-btn {
+  background: transparent;
+  font-size: 1.3rem;
 }
+
+.profile-dropdown {
+  list-style: none;
+  /* border: 1px solid black; */
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 12px 0px;
+  box-shadow: rgba(194, 204, 214, 0.2) 0px 8px 24px;
+  position: absolute;
+  right: 80px;
+  top: 60px;
+  z-index: 50 !important;
+}
+
+.profile-dropdown li {
+  padding: 5px 32px;
+  text-align: left;
+}
+
+.profile-dropdown li:hover {
+  background-color: whitesmoke;
+  transition: 0.4s;
+}
+
+.logout-btn {
+  background: transparent;
+}
+
 /* Navbar end */
 
 /* Hero section start */
@@ -240,4 +274,16 @@
     top: 0px;
     left: -8px;
   }
+}
+
+/* employer dashboard */
+/* sidebar */
+
+.logout-btn {
+  position: absolute !important;
+  bottom: 0 !important;
+}
+
+.logout-button > button {
+  background-color: transparent;
 }

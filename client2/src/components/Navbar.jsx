@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import { Link } from "react-router-dom";
+import { IoPerson } from "react-icons/io5";
 
 const Navbar = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
+  const [toggleProfileMenu, setToggleProfileMenu] = useState(false);
+  const toggleProfile = () => {
+    setToggleProfileMenu(!toggleProfileMenu);
+  };
   return (
     <>
-      <nav className="navbar navbar-expand-lg py-3 border-bottom">
+      <nav className="navbar navbar-expand-lg py-3 border-bottom position-relative">
         <div className="container">
           <Link className="navbar-brand me-auto fw-bold fs-3" to="/">
             Getjob
@@ -60,41 +65,50 @@ const Navbar = () => {
             </div>
           </div>
           {isLoggedIn ? (
-            <div className="dropdown border-0">
+            <>
               <button
-                className="dropdown-toggle border-0 profile-dropdown"
+                className="border-0 profile-btn"
                 type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                onClick={toggleProfile}
               >
-                Dropdown button
+                <IoPerson />
               </button>
-              <ul className="dropdown-menu py-3 dropdown-menu-light">
-                <li className="py-1">
-                  <Link to="/" className="dropdown-item">
-                    Profile
-                  </Link>
-                </li>
-                <li className="py-1">
-                  <Link to="/" className="dropdown-item">
-                    Applied Jobs
-                  </Link>
-                </li>
-                <li className="py-1">
-                  <Link to="/" className="dropdown-item">
-                    Job Alerts
-                  </Link>
-                </li>
-                {/* <li className="py-1">
-                  <Link to="/" className="dropdown-item">
-                    Change Password
-                  </Link>
-                </li> */}
-                <li className="py-1 ps-3">
-                  <button className="list-group-item ps-1">Logout</button>
-                </li>
-              </ul>
-            </div>
+              {toggleProfileMenu ? (
+                <ul className="rounded-3 profile-dropdown">
+                  <li className="w-100">
+                    <a
+                      href=""
+                      className="text-decoration-none text-medium text-dark"
+                    >
+                      Profile
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      className="text-decoration-none text-medium text-dark"
+                    >
+                      My Jobs
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href=""
+                      className="text-decoration-none text-medium text-dark"
+                    >
+                      Settings
+                    </a>
+                  </li>
+                  <li className="w-100">
+                    <button className="border-0 text-danger logout-btn text-medium fw-medium px-0">
+                      Logout
+                    </button>
+                  </li>
+                </ul>
+              ) : (
+                <></>
+              )}
+            </>
           ) : (
             <Link
               to="/sign-up"

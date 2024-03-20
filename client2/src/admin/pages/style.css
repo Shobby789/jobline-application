@@ -11,12 +11,15 @@
   top: 0;
   left: 0;
   bottom: 0;
-  border-right: 1px solid whitesmoke;
+  border-right: 1px solid rgb(24, 23, 23);
 }
 
 .employer-content {
   width: calc(100% - 20%); /* Subtract the width of the sidebar from 100% */
   margin-left: 20%;
+  background-color: red;
+  border: none;
+  height: auto;
 }
 
 .top-bar {

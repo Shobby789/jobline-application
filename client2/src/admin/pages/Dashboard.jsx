@@ -17,13 +17,13 @@ const Dashboard = () => {
     };
   }, []);
   return (
-    <div className="container-fluid border-bottom employer-dashboard">
+    <div className="container-fluid employer-dashboard">
       <div className="sidebar-container">
         {/* <Sidebar /> */}
-        {screenWidth < 768 ? <Topbar /> : <Sidebar />}
+        {screenWidth < 769 ? <Topbar /> : <Sidebar />}
       </div>
-      <div className="pt-5 pe-lg-4 px-sm-3 employer-content">
-        <div className="container pt-5">
+      <div className="pt-5 px-0 employer-content">
+        <div className="container pt-sm-5">
           <p>{screenWidth}</p>
           <JobCard2 />
           <JobCard2 />

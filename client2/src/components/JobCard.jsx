@@ -63,7 +63,7 @@ const JobCard = ({
             </div>
           </div>
           <button className="job-type-btn rounded-2 text-small" disabled>
-            {job_type}
+            Part Time
           </button>
         </div>
       </div>
