@@ -62,9 +62,7 @@ const JobCard2 = ({
               </p>
             </div>
           </div>
-          <button className="job-type-btn rounded-2 text-small" disabled>
-            {job_type}
-          </button>
+          <p className="text-secondary text-small">{job_type}</p>
         </div>
       </div>
     </div>

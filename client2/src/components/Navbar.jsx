@@ -36,10 +36,10 @@ const Navbar = () => {
               ></button>
             </div>
             <div className="offcanvas-body">
-              <ul className="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item">
                   <Link
-                    className="nav-link active mx-lg-2 text-dark"
+                    className="nav-link active mx-lg-3 text-dark"
                     aria-current="page"
                     to="/"
                   >
@@ -47,17 +47,17 @@ const Navbar = () => {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-lg-2 text-dark" to="/all-jobs">
+                  <Link className="nav-link mx-lg-3 text-dark" to="/all-jobs">
                     All Jobs
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-lg-2 text-dark" to="/companies">
+                  <Link className="nav-link mx-lg-3 text-dark" to="/companies">
                     Companies
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link mx-lg-2 text-dark" to="/contact">
+                  <Link className="nav-link mx-lg-3 text-dark" to="/contact">
                     Contact
                   </Link>
                 </li>
@@ -99,11 +99,11 @@ const Navbar = () => {
                       Settings
                     </a>
                   </li>
-                  <li className="w-100">
+                  {/* <li className="w-100">
                     <button className="border-0 text-danger logout-btn text-medium fw-medium px-0">
                       Logout
                     </button>
-                  </li>
+                  </li> */}
                 </ul>
               ) : (
                 <></>

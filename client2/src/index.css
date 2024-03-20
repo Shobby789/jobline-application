@@ -115,7 +115,7 @@
   flex-direction: column;
   align-items: flex-start;
   text-align: left;
-  padding: 12px 0px;
+  padding: 12px 0px 12px 0px !important;
   box-shadow: rgba(194, 204, 214, 0.2) 0px 8px 24px;
   position: absolute;
   right: 80px;
@@ -135,6 +135,8 @@
 
 .logout-btn {
   background: transparent;
+  padding-bottom: 12px !important;
+  display: none;
 }
 
 /* Navbar end */

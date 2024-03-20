@@ -62,9 +62,7 @@ const JobCard = ({
               </p>
             </div>
           </div>
-          <button className="job-type-btn rounded-2 text-small" disabled>
-            Part Time
-          </button>
+          <p className="text-secondary text-small">Part Time</p>
         </div>
       </div>
     </div>

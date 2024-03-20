@@ -38,7 +38,7 @@ const AllJobs = () => {
                     placeholder="City"
                   />
                 </div>
-                <div className="form-group">
+                <div className="form-group mb-4">
                   <label htmlFor="" className="form label mb-2 text-medium">
                     Category
                   </label>
@@ -48,6 +48,11 @@ const AllJobs = () => {
                     <option value="2">Two</option>
                     <option value="3">Three</option>
                   </select>
+                </div>
+                <div className="form-group">
+                  <button className="btn btn-dark text-medium w-100 py-2">
+                    Search
+                  </button>
                 </div>
               </form>
               <div className="secondary-bg py-4 px-3 rounded-4">
@@ -61,7 +66,7 @@ const AllJobs = () => {
                 </p>
                 <a
                   href="/hire"
-                  className="btn btn-dark btn-sm px-3 rounded-5 text-small py-1"
+                  className="btn btn-dark btn-sm px-3 py-2 text-small rounded-2"
                 >
                   Start Recruiting
                 </a>

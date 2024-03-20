@@ -69,14 +69,14 @@ const Home = () => {
             <div className="col-lg-6 col-md-6 col-sm-12 text-start px-lg-4">
               <h4 className="fw-semibold">Recommended Jobs</h4>
             </div>
-            <div className="col-lg-6 col-md-6 col-sm-12 text-end px-4">
-              <button className="job-filter-btn mx-2 border-bottom">
+            <div className="col-lg-6 col-md-6 col-sm-12 text-sm-center text-lg-end px-4">
+              <button className="job-filter-btn mx-lg-2 mx-sm-1 border-bottom">
                 Part Time
               </button>
-              <button className="job-filter-btn mx-2 border-bottom">
+              <button className="job-filter-btn mx-lg-2 mx-sm-1 border-bottom">
                 Full Time
               </button>
-              <button className="job-filter-btn ms-2 border-bottom">
+              <button className="job-filter-btn ms-lg-2 mx-sm-1 border-bottom">
                 Remote
               </button>
             </div>
