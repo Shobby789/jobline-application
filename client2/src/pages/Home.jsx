@@ -7,6 +7,7 @@ import Testimonials from "../components/Testimonials";
 import Subscribe from "../components/Subscribe";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import { MdArrowRightAlt } from "react-icons/md";
 
 const Home = () => {
   const fetchJobs = async () => {
@@ -86,9 +87,16 @@ const Home = () => {
             <JobCard />
             <JobCard />
             <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
+            <JobCard />
           </div>
           <div className="container text-center pb-3">
-            <Link to="/" className="btn btn-dark btn-sm py-2 px-3 rounded-2">
+            <Link
+              to="/"
+              className="icon-link icon-link-hover btn btn-dark btn-sm py-2 px-3 px-lg-4 rounded-5"
+            >
               See More
             </Link>
           </div>
@@ -99,16 +107,16 @@ const Home = () => {
       <div className="container-fluid py-5">
         <div className="container">
           <div className="row pt-3 px-lg-2">
-            <div className="col-lg-6 col-md-6 col-sm-12 text-start pt-0">
+            <div className="col-lg-6 col-md-6 col-sm-12 text-start pt-0 mb-3 mb-md-0 mb-lg-0">
               <h4 className="fw-semibold">Popular Job Categories</h4>
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 text-end">
-              <a
-                href="/"
-                className="text-decoration-none px-3 py-2 rounded-2 btn-theme"
+              <Link
+                to="/"
+                className="text-decoration-none px-3 px-lg-4 py-2 rounded-5 btn-theme"
               >
-                See More
-              </a>
+                See More <MdArrowRightAlt className="ms-1 fs-5" />
+              </Link>
             </div>
           </div>
         </div>
@@ -145,7 +153,7 @@ const Home = () => {
               </p>
               <a
                 href="/"
-                className="btn btn-outline-dark fw-semibold fs-6 px-3 py-2 rounded-2"
+                className="btn btn-outline-dark fw-semibold fs-6 px-3 px-lg-4 py-2 rounded-5"
               >
                 Get Started
               </a>

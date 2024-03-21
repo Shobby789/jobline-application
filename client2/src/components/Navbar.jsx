@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { HiOutlineMenu } from "react-icons/hi";
 import { Link } from "react-router-dom";
-import { IoPerson } from "react-icons/io5";
+import { BsPerson } from "react-icons/bs";
 
 const Navbar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(true);
@@ -71,7 +71,8 @@ const Navbar = () => {
                 type="button"
                 onClick={toggleProfile}
               >
-                <IoPerson />
+                <BsPerson className="me-2 d-none d-sm-inline" />
+                <span className="text-medium fw-medium">My Account</span>
               </button>
               {toggleProfileMenu ? (
                 <ul className="rounded-3 profile-dropdown">

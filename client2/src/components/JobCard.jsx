@@ -4,6 +4,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { CiClock2 } from "react-icons/ci";
 import { LiaMoneyBillWaveAltSolid } from "react-icons/lia";
 import { Link } from "react-router-dom";
+import googleLogo from "../assets/google-logo.png";
 
 const JobCard = ({
   id,
@@ -17,10 +18,31 @@ const JobCard = ({
 }) => {
   return (
     <div
-      className="card job-card text-center mb-4 mx-auto p-4 rounded-4 border shadow_hover"
+      className="card mb-4 mx-sm-auto p-4 rounded-4 border shadow_hover"
       id={id}
+      style={{ width: "16rem" }}
     >
-      <div className="row w-lg-50">
+      <p className="card-text text-small text-end mb-0">Part Time</p>
+      <img
+        src={googleLogo}
+        alt=""
+        className="card-img mx-auto mb-3"
+        style={{ width: "80px", height: "80px" }}
+      />
+      <h6 className="card-title text-center mb-1">Graphic Designer</h6>
+      <hr />
+      <p className="card-text fw-semibold mb-1">Google</p>
+      <p className="card-text text-medium mb-1">
+        <CiLocationOn className="fs-6" />{" "}
+        <span className="text-small">Karachi, Pakistan</span>
+      </p>
+      <div className="card-actions d-flex justify-content-between align-items-center mb-0 pb-0">
+        <p className="card-text fw-semibold text-medium mt-3">$5000</p>
+        <button className="btn btn-outline-dark rounded-5 text-small py-1 px-4">
+          Apply
+        </button>
+      </div>
+      {/* <div className="row w-lg-50">
         <div className="col-2">
           <PiInstagramLogoFill className="company-logo" />
         </div>
@@ -64,7 +86,7 @@ const JobCard = ({
           </div>
           <p className="text-secondary text-small">Part Time</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
